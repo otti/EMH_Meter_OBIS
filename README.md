@@ -1,6 +1,6 @@
 # OBIS of EMH Meter
 
-Produced in 2024
+Meter produced in 2024
 
 | Binary               | OBIS             | Description                 | Unit with PIN |Availabe without PIN| 
 |----------------------|------------------|-----------------------------|--------|---------------------------|
@@ -31,6 +31,19 @@ Produced in 2024
 
 Useful links:  
 * https://www.avacon-netz.de/content/dam/revu-global/avacon-netz/documents/Energie_anschliessen/Stromnetz/TAB/Techn_Mindestanforderung_MSB_mME_Strom.pdf  
-* https://www.rng.de/bedienungsanleitung-logarex-lk13be904619.pdfx
+* https://www.rng.de/bedienungsanleitung-logarex-lk13be904619.pdfx  
+* https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03109/TR-03109-1_Anlage_Feinspezifikation_Drahtgebundene_LMN-Schnittstelle_Teilb.pdf?__blob=publicationFile  
+* http://www.stefan-weigert.de/php_loader/sml.php  
 
-Serial number in raw_data.bin and text.txt have been obfuscated (Set to 0x00). So the CRCs will not match!  
+Serial number in raw_data.bin and raw_data.txt have been obfuscated (Set to 0x00). So the CRCs will not match!  
+
+CRC16 (CRC-16/IBM-SDLC)
+* Poly:   0x1021
+* Init:   0xFFFF
+* RefIn:  TRUE
+* RefOut: TRUE
+* XorOut: 0xFFFF
+
+<br><br>
+
+<img src="./EMH.png" alt="MH Meter" width="400"/>
